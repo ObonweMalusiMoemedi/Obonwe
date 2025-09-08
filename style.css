@@ -1,11 +1,11 @@
 /* CSS Variables for theme colors & fonts */
 
 :root{
-    --color-primary: #2c3e50;
-    --color-secondary: #272d47;
-    --color-accent: #cf782c;
+    --color-primary: #2c2a42;
+    --color-secondary: #322e58;
+    --color-accent: #b66c2b;
     --color-bg: #f5f7fa;
-    --color-text: #333;
+    --color-text: #272727;
     --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --font-heading: 'Montserrat', sans-serif;
 
@@ -66,10 +66,9 @@ a {
     transition: color var(--transition-speed);
 }
 
-a:hover,
 a:focus {
-    color: var(--color-accent);
-    outline: none;
+    color: 2px solid var(--color-accent);
+    outline-offset: 2px;
 }
 
 /* Buttons */
@@ -136,12 +135,15 @@ nav ul.nav-links li a.hover {
     color: var(--color-accent);
 }
 
-.hamburger {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-    user-select: none;
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    nav ul.nav-links {
+        display: none;
+    }
 }
+
 
 /* Main Layout container */
 main {
@@ -194,9 +196,9 @@ textarea:focus {
 /* Error message Styling */
 .error-message {
     color: #d6472e;
-    font-size: 0.0875rem;
-    margin-top: 0.2rem;
-    min-height: 1.2rem;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    display: block;
 }
 
 /* Footer */
