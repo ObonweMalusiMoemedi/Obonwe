@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Portfolio | Obonwe Malusi Moemedi Web Developer</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <link rel="stylesheet" href="css/animations.css"/>
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">Projects by Moemedi</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Obonwe-Moemedi-CV.pdf" target="_blank">Resume</a></li>
+                </ul>
+                <a href="Obonwe-Moemedi-CV.pdf" class="btn" download>
+                    Download my Resume
+                </a>
+                <button class="hamburger" aria-label="Toggle-Menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <section class="portfolio-section">
+                <h1>My Projects</h1>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                </div>
+                
+                <!--Project 1-->
+                <div class="portfolio-grid" id="PortfolioGrid">
+                <article class="portfolio-item" data-category="web">
+                    <img src="2025-09-07_163805.jpg" alt="Project 1 Screenshot"/>
+                    <h2>Project 1</h2>
+                    <p>A Responsive website that was built with HTML. I tried using HTML but it gave me a few problems and this is how it came but i made time for it.</p>
+                    <a href="#" class="btn project-btn" aria-label="View project one details">View details</a>
+                </article>
+
+                <!--Project 2-->
+                <article class="portfolio-item" data-category="mobile">
+                    <img src="2025-09-07_165540.png" alt="Project 2 Screenshot"/>
+                    <h2>Project 2</h2>
+                    <p>A mobile app tried developing using CSS. With the HTML it came the same problems but i could not give up with everything but i am here continuing with it.</p>
+                    <a href="#" class="btn project-btn" aria-label="View project two details">View details</a>
+                </article>
+
+                <!--Project 3-->
+                <article class="portfolio-item" data-category="design">
+                    <img src="2025-09-07 170237.png" alt="Project 3 Screenshot"/>
+                    <h2>Project 3</h2>
+                    <p>A design using Javascript.  To emphasise i had to put some work and knowledge with the details but gave some few problems. It's just patience that i need.</p>
+                    <a href="#" class="btn project-btn" aria-label="View project three details">View details</a>
+                </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Projects by Moemedi. All rights reserved</p>
+        </footer>
+
+        <script src="js/main.js"></script>
+        <script src="js/portfolio.js"></script>
+
+    </body>
+</html>
