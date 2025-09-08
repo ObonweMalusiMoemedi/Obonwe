@@ -11,6 +11,6 @@ Welcome to my personal portfolio website! This websites showcases my web develop
 # Setup Instructions
 
 Clone this repository:
-https://github.com/Obonwe-Moemedi/Obonwe-Malusi-Moemedi-portfolio.git
+https://github.com/ObonweMalusiMoemedi/main/README.md
 
 cd Obonwe-Malusi-Moemedi-portfolio
